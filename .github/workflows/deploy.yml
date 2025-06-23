@@ -1,16 +1,16 @@
-name: Deploy ReactForm to GitHub Pages
+name: Deploy React Client to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies (client only)
+      - name: Install dependencies
         working-directory: ./client
         run: npm install
 
