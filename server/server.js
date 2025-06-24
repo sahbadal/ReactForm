@@ -3,7 +3,10 @@ import cors from "cors";
 
 const app = express();
 
-const origin = ["http://localhost:3001"];
+const origin = [
+  "http://localhost:3001",
+  "https://sahbadal.github.io/ReactForm/",
+];
 // Middleware
 app.use(
   cors({
