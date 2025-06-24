@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("API is working");
+  res.send("Welcome to the Express Server!");
 });
 
 const PORT = process.env.PORT || 3000;
